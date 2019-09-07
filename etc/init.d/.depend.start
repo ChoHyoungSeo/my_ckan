@@ -1,0 +1,20 @@
+TARGETS = rsyslog lvm2-lvmpolld lvm2-lvmetad uuidd lxd unattended-upgrades lxcfs open-vm-tools jetty8 killprocs apport apache2 single nginx irqbalance mdadm atd redis-server postgresql dbus acpid rsync cron ssh sysstat plymouth rc.local grub-common ondemand
+INTERACTIVE = apache2
+apache2: rsyslog
+single: killprocs
+nginx: rsyslog
+irqbalance: rsyslog
+mdadm: rsyslog
+atd: rsyslog
+redis-server: rsyslog
+postgresql: rsyslog
+dbus: rsyslog
+acpid: rsyslog
+rsync: rsyslog
+cron: rsyslog
+ssh: rsyslog
+sysstat: rsyslog
+plymouth: nginx rsyslog lvm2-lvmpolld lvm2-lvmetad irqbalance uuidd mdadm lxd atd redis-server postgresql unattended-upgrades lxcfs open-vm-tools jetty8 apache2 dbus acpid rsync cron apport ssh sysstat
+rc.local: nginx rsyslog lvm2-lvmpolld lvm2-lvmetad irqbalance uuidd mdadm lxd atd redis-server postgresql unattended-upgrades lxcfs open-vm-tools jetty8 apache2 dbus acpid rsync cron apport ssh sysstat
+grub-common: nginx rsyslog lvm2-lvmpolld lvm2-lvmetad irqbalance uuidd mdadm lxd atd redis-server postgresql unattended-upgrades lxcfs open-vm-tools jetty8 apache2 dbus acpid rsync cron apport ssh sysstat
+ondemand: nginx rsyslog lvm2-lvmpolld lvm2-lvmetad irqbalance uuidd mdadm lxd atd redis-server postgresql unattended-upgrades lxcfs open-vm-tools jetty8 apache2 dbus acpid rsync cron apport ssh sysstat
