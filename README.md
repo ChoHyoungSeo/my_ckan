@@ -4,3 +4,7 @@
 (local/VM not in this repo)
 * config: /etc/ckan/default/production.ini
 * public DNS(IPv4): flexible
+
+
+# main
+![main](./img/main.png)
